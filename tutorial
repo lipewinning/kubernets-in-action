@@ -55,3 +55,10 @@ kubectl delete rc <replicationController> --cascade=false
 kubectl get rs
 
 
+*To run a pod on all cluster nodes, you create a DaemonSet object
+kubectl get ds
+
+**adding a label to a node
+kubectl label node <node-name> disk=ssd
+kubectl label node <node-name> disk=hdd --overwrite
+
